@@ -53,9 +53,13 @@ def contains_char(input_word: str, input_letter: str) -> None:
         instance += 1
     # each must be new if, otherwise if one instance proved true, would continue to
     # next line of code
-    if instance >= 1:
+    if instance > 1:
         print(
             str(instance) + " instances of " + input_letter + " found in " + input_word
+        )
+    elif instance == 1:
+        print(
+            str(instance) + " instance of " + input_letter + " found in " + input_word
         )
     else:
         print("No instances of " + input_letter + " found in " + input_word)
