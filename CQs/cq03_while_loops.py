@@ -9,3 +9,6 @@ def num_instances(phrase: str, search_char: str) -> int:
             count += 1
         index = index + 1
     return count
+
+
+# make memory diagram to see what is happening here!
